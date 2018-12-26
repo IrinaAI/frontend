@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css" />
+        <title>Калькулятор</title>
+        <script src="Calculator.js"></script>
+    </head>
+    <body>
+        <div name="calc" class="wrapper">
+            <div class="main">
+                <div class="row">
+                    <div class="inpt"><input type="text" name="input"  id="input_id" autofocus></div> <!--onkeydown="calc.input.value = checkKey(event), cursorToEnd()"-->
+                    <div class="btn"><input type="button" value="<" onclick="calc.input.value = backspace(), cursorToEnd()"></div> 
+                </div>
+                <div class="row">
+                    <div class="btn"><input type="button" value="7" onclick="calc.input.value += '7', cursorToEnd()"></div>
+                    <div class="btn"><input type="button" value="8" onclick="calc.input.value += '8', cursorToEnd()"></div>
+                    <div class="btn"><input type="button" value="9" onclick="calc.input.value += '9', cursorToEnd()"></div>
+                    <div class="btn"><input type="button" value="+" onclick="calc.input.value += '+', cursorToEnd()"></div>
+                </div>
+                <div class="row">
+                    <div class="btn"><input type="button" value="4" onclick="calc.input.value += '4', cursorToEnd()"></div>
+                    <div class="btn"><input type="button" value="5" onclick="calc.input.value += '5', cursorToEnd()"></div>
+                    <div class="btn"><input type="button" value="6" onclick="calc.input.value += '6', cursorToEnd()"></div>
+                    <div class="btn"><input type="button" value="-" onclick="calc.input.value += '-', cursorToEnd()"></div>
+                </div>
+                <div class="row">
+                    <div class="btn"><input type="button" value="1" onclick="calc.input.value += '1', cursorToEnd()"></div>
+                    <div class="btn"><input type="button" value="2" onclick="calc.input.value += '2', cursorToEnd()"></div>
+                    <div class="btn"><input type="button" value="3" onclick="calc.input.value += '3', cursorToEnd()"></div>
+                    <div class="btn"><input type="button" value="*" onclick="calc.input.value += '*', cursorToEnd()"></div>
+                </div>  
+                <div class="row">
+                    <div class="btn"><input type="button" value="C" onclick="calc.input.value = '', cursorToEnd()"></div>
+                    <div class="btn"><input type="button" value="0" onclick="calc.input.value += '0', cursorToEnd()"></div>
+                    <div class="btn"><input type="button" value="=" onclick="calc.input.value = f(), cursorToEnd()"></div>
+                    <div class="btn"><input type="button" value="/" onclick="calc.input.value += '/', cursorToEnd()"></div>
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>
+        

@@ -1,0 +1,64 @@
+body {
+    background: url(images/fon3.jpg);
+    }
+.wrapper {
+    margin: 5% auto;
+    width: 40%;
+    background: url(images/fon2.jpg);
+    border-radius: 10px;
+    border: 1px solid #949493;
+    box-shadow: 3px 3px 7px #000;
+}
+.main {
+    margin: 5% auto ;
+    width: 80%;
+}
+.row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.inpt{
+    width: 75%;
+}
+.inpt input{
+    
+    width: 97%;
+    height: 85%;
+    font-size: 16pt;
+    border-radius: 15px;
+    margin-bottom: 3%;
+    outline: none;
+}
+.btn{
+    width: 25%;
+}
+.btn input{
+    background: url(images/button.jpg); 
+    width: 100%;
+    font-size: 18pt;
+    font-weight: bold;
+    padding: 20%; 
+    border-radius: 15px;
+    outline: none; 
+    background: rgb(184, 184, 184) linear-gradient(rgb(220, 220, 220), rgb(184, 184, 184)); 
+}
+@media screen and (min-width:500px) and (max-width:800px){
+    .wrapper {
+        margin: 5% auto;
+        width: 45%;
+    }
+}
+@media screen and (min-width:400px) and (max-width:500px){
+    .wrapper {
+        margin: 5% auto;
+        width: 60%;
+    }
+}
+@media screen and (min-width:0px) and (max-width:500px){
+    .wrapper {
+        margin: 5% auto;
+        width: 70%;
+    }
+}
+    
