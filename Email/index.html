@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <title>Emails</title>        
+    </head>
+    <body>
+            <div id="emailHistory">
+                    <div class="emailHistory-content">
+                        <div class="emailHistory-header">
+                            <h2>История посещений</h2>
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="emailHistory-body">
+                            <table id="historyTable">
+                                <tr><th>Почта</th><th>Дата</th></tr>                    
+                            </table>   
+                        </div>
+                        <div class="emailHistory-footer"></div>
+                    </div>                
+                </div>
+        <form name="email" class="wrapper">
+            <div id="main">
+                <div class="enterEmail">
+                    <input type="email" name="input" id="input_id" placeholder="name@ya.ru" required> <!--pattern="^\s+@\s+\.\s+$"-->
+                    <input type="submit" id="submit"value="Отправить" onclick="addEmailToTable()"> 
+                </div>
+                <input type="button" id="historyButton" value="Посмотреть историю посещений"> 
+            </div>            
+        </form>    
+        
+        <script src="Email1.js"></script>                                  
+    </body>
+</html>
+        
